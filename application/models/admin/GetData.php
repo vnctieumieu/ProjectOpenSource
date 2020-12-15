@@ -27,6 +27,21 @@ class GetData extends CI_Model {
 			$this->db->where('id', $id);
 		return $this->db->get('admin_role')->result_array();
 	}
+
+	public function getVoucher($id = -1)
+	{
+		$this->db->select('*');
+		if ($id !== -1)
+			$this->db->where('id', $id);
+		return $this->db->get('vouchers')->result_array();
+	}
+
+	public function getVoucherByCode($code)
+	{
+		$this->db->select('*');
+		$this->db->where('code', $code);
+		return $this->db->get('vouchers')->row_array();
+	}
 }
 
 /* End of file GetData.php */
