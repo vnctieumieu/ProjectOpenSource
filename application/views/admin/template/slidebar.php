@@ -56,7 +56,7 @@
 			</li>
 			<?php endif ?>
 
-			<!-- <li>
+			<li>
 				<div class="nav-menu__title dropdown-mm">
 					<div class="nav-menu__title-name">
 						<div class="icon-menu material-icons">menu_book</div>
@@ -72,6 +72,7 @@
 					</ul>
 				</div>
 			</li>
+			<!-- 
 			<li>
 				<div class="nav-menu__title dropdown-mm">
 					<div class="nav-menu__title-name">
